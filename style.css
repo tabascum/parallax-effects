@@ -116,6 +116,13 @@ section {
     border-radius: 0.5rem;
     margin: 0 1rem;
     padding: .8rem 0;
+    transition: all 0.4s;
+}
+
+.f-card:hover {
+    text-shadow: .1rem .1rem .6rem #f6e4e4;
+    box-shadow: .1rem .1rem .6rem #f21a9f;
+    transform: translate(-1%);
 }
 
 .card {
@@ -137,23 +144,78 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     font-family: sans-serif;
+    align-items: center;
     background-color: #ffffff;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0 3rem;
 }
+
+.foot-head {
+    font-family: 'Great Vibes',sans-serif;
+}
+
+form {
+    background-color: #f6e4e4;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.feedback-input {
+    color:#f21a9f;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border-radius: .5rem;
+    line-height: .5rem;
+    border: .1rem solid #f21a9f;
+    transition: all 0.3s;
+    padding: .8rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    outline:0;
+ }
+  
+textarea {
+    height: 10vh;
+    line-height: 10%;
+    resize: none;
+}
+  
+[type="submit"] {
+    font-family: sans-serif;
+    width: 100%;
+    background:#f21a9fbb;
+    border-radius: .5rem;
+    border: 0;
+    cursor: pointer;
+    color: #f6e4e4;
+    font-size: 1.5rem;
+    padding: .8rem 0;
+    font-weight: 700;
+}
+  
+[type="submit"]:hover { background:#f6e4e4; color: #f21a9f; }
 
 @media only screen and (max-width: 1000px) {
     #parallax img {
         display: none;
     }
 
-    .serv-cards {
+    section {
         display: flex;
         flex-direction: column;
         width: auto;
+    }
+
+    .serv-cards {
+        display: inherit;
+        flex-direction: column;
         gap: 1rem;
+        width: 20%;
+    }
+
+    .f-card {
+        display: flex;
     }
     
 }
