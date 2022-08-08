@@ -14,7 +14,7 @@ header {
 }
 
 .intro-text {
-    background: #f6e4e493;
+    background: #f6e4e4ce;
     color: #f21a9f;
     text-shadow: .2rem .2rem .2rem#f6e4e4;
     position: absolute;
@@ -32,7 +32,7 @@ header {
     font-size: 3rem;
 }
 
-.ballons {
+.balloons {
     height: 150px;
     position: absolute;
     top: 60%;
@@ -76,6 +76,8 @@ section {
 
 .about h1 {
     font-family: 'Great Vibes', sans-serif;
+    color:#f21a9f;
+    text-shadow: .2rem .2rem .2rem#f6e4e4;
     font-size: 4rem;
 }
 
@@ -91,13 +93,14 @@ section {
 
 .services h1 {
     font-size: 4rem;
-    padding: 1rem;
+    padding: .6rem;
     font-family: 'Great Vibes', sans-serif;
     border-radius: 0.5rem;
     color: #f21a9f;
-    text-shadow: .2rem .2rem .2rem#f6e4e4;
-    background-color: #f6e4e493;
-    align-items: center;
+    text-shadow: .1rem .1rem .6rem #f6e4e4;
+    box-shadow: .1rem .1rem .6rem #f21a9f;
+    background-color: #f6e4e4ce;
+    text-align: center;
 }
 
 .serv-cards {
@@ -110,25 +113,19 @@ section {
 .f-card {
     display: flex;
     flex-direction: column;
-    background-color: #f6e4e493;
+    justify-content: space-around;
+    background-color: #f6e4e4;
     height: 60vh;
     width: 18vw;
     border-radius: 0.5rem;
-    margin: 0 1rem;
-    padding: .8rem 0;
-    transition: all 0.4s;
-}
-
-.f-card:hover {
-    text-shadow: .1rem .1rem .6rem #f6e4e4;
+    margin: 1rem;
     box-shadow: .1rem .1rem .6rem #f21a9f;
-    transform: translate(-1%);
+    transition: all 0.4s;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
     gap: 8rem;
@@ -138,36 +135,77 @@ section {
     width: 50%;
 }
 
+.balloon {
+    animation: up 2s linear infinite alternate;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(3rem);
+    }
+}
+
+.couple {
+    animation: dance 2.5s linear infinite alternate;
+}
+
+@keyframes dance {
+    from {
+        transform: translateX(-1rem);
+    }
+    to {
+        transform: translateX(1rem);
+    }
+}
+
+.bells {
+    animation: ring 2s linear infinite alternate;
+}
+
+@keyframes ring {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
 footer {
     min-height: 100vh;
     color: #f6e4e4;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: sans-serif;
     align-items: center;
     background-color: #ffffff;
-    font-size: 2rem;
-    padding: 0 3rem;
+    font-size: 1.6rem;
 }
 
+
 .foot-head {
+    font-size: 3rem;
+    color:#f21a9f;
+    text-shadow: .2rem .2rem .2rem#f6e4e4;
     font-family: 'Great Vibes',sans-serif;
 }
 
 form {
     background-color: #f6e4e4;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0.5rem;
 }
 
 .feedback-input {
     color:#f21a9f;
-    font-family: sans-serif;
-    font-size: 1rem;
+    font-size: .9rem;
     border-radius: .5rem;
     line-height: .5rem;
-    border: .1rem solid #f21a9f;
+    border: .08rem solid #f21a9f;
     transition: all 0.3s;
     padding: .8rem;
     margin-bottom: 0.5rem;
@@ -194,9 +232,42 @@ textarea {
     font-weight: 700;
 }
   
-[type="submit"]:hover { background:#f6e4e4; color: #f21a9f; }
+[type="submit"]:hover { 
+    background:#ffffff; 
+    color: #f21a9f; 
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.social h1 {
+    font-family: 'Great Vibes', sans-serif;
+    color:#f21a9f;
+    text-shadow: .2rem .2rem .2rem#f6e4e4;
+    margin-right: 2rem;
+}
+
+.fa-brands {
+    font-size: 5rem;
+    color: #f6e4e4;
+}
+
 
 @media only screen and (max-width: 1000px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .intro-text {
+        text-align: center;
+    }
+
     #parallax img {
         display: none;
     }
