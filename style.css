@@ -26,6 +26,7 @@ header {
     transform: translate(-10%, -10%);
     font-family: 'Great Vibes', cursive;
     text-align: center;
+    box-shadow: .1rem .1rem .6rem #f21a9f;
 }
 
 .intro-text h3 {
@@ -38,6 +39,7 @@ header {
     top: 60%;
     left: 30%;
     transform: translate(-30%, -65%);
+    filter: drop-shadow(.2rem .2rem .2rem#f6e4e4bb);
 }
 
 .dance {
@@ -46,6 +48,7 @@ header {
     top: 20%;
     left: 15%;
     transform: translate(-20%, -15%);
+    filter: drop-shadow(.2rem .2rem .1rem #f6e4e4bb);
 }
 
 .bell {
@@ -54,6 +57,7 @@ header {
     top: 90%;
     left: 8%;
     transform: translate(-8%, -90%);
+    filter: drop-shadow(.2rem .2rem .1rem #f6e4e4bb);
 }
 
 section {
@@ -121,6 +125,11 @@ section {
     margin: 1rem;
     box-shadow: .1rem .1rem .6rem #f21a9f;
     transition: all 0.4s;
+}
+
+.f-card:hover {
+    cursor: pointer;
+    transform: translateY(-.5em);
 }
 
 .card {
@@ -198,6 +207,7 @@ form {
     background-color: #f6e4e4;
     padding: 1rem;
     border-radius: 0.5rem;
+    box-shadow: .1rem .1rem .6rem #f21a9f;
 }
 
 .feedback-input {
@@ -254,7 +264,7 @@ textarea {
 
 .fa-brands {
     font-size: 5rem;
-    color: #f6e4e4;
+    color: #f21a9f;
 }
 
 
