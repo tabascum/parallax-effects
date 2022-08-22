@@ -71,10 +71,13 @@
             <p>Let's brighten up your events!</p>
         </div>
         <div class="foot-text">
-            <form>      
-                <input name="name" type="text" class="feedback-input" placeholder="name" required/>   
-                <input name="email" type="text" class="feedback-input" placeholder="email" required />
-                <textarea name="text" class="feedback-input" placeholder="message" maxlength="250" required></textarea>
+            <form method="post">
+                <label for="name">name</label>
+                <input name="name" type="text" class="feedback-input" required/>   
+                <label for="email">email</label>
+                <input name="email" type="text" class="feedback-input" required />
+                <label for="textarea">message</label>
+                <textarea name="text" class="feedback-input" maxlength="250" required></textarea>
                 <input type="submit" value="send"/>
               </form>
         </div>
