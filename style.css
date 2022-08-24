@@ -62,7 +62,7 @@ header {
 
 section {
   min-height: 100vh;
-  color: #f6e4e4;
+  color: #f21a9f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,7 @@ section {
 
 .about h1 {
   font-family: "Great Vibes", sans-serif;
-  color: #f21a9f;
+
   text-shadow: 0.2rem 0.2rem 0.2rem#f6e4e4;
   font-size: 4rem;
 }
@@ -100,7 +100,6 @@ section {
   padding: 0.6rem;
   font-family: "Great Vibes", sans-serif;
   border-radius: 0.5rem;
-  color: #f21a9f;
   text-shadow: 0.1rem 0.1rem 0.6rem #f6e4e4;
   box-shadow: 0.1rem 0.1rem 0.6rem #f21a9f;
   background-color: #f6e4e4ce;
@@ -185,7 +184,7 @@ section {
 
 footer {
   min-height: 100vh;
-  color: #f6e4e4;
+  color: #f21a9f;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -197,7 +196,6 @@ footer {
 
 .foot-head {
   font-size: 3rem;
-  color: #f21a9f;
   text-shadow: 0.2rem 0.2rem 0.2rem#f6e4e4;
   font-family: "Great Vibes", sans-serif;
 }
